@@ -1,4 +1,4 @@
-In this srepo I explain how to launch EC2 instance using Ubuntu AMI
+In this repo I explain how to launch EC2 instance using Ubuntu AMI
 
 Before launching EC2 you need to have VPC with Internet Gateway, Route Tables, Subnets and SG base in place
 
