@@ -1,0 +1,35 @@
+create file nginx.sh
+run this command to make out script file executable --> chmod +x nginx.sh
+put this script insode and run command --> sudo ./nginx.sh
+
+#!/bin/bash
+yum update -y
+amazon-linux-extras install nginx1 -y
+cd /usr/share/nginx/html
+touch index.html
+echo "<h1> hello from orchsky </h1>" >> index.html
+service nginx start
+
+----------------------------------------
+
+Installing nginx on ubuntu
+
+#!/bin/bash
+apt update -y
+apt install nginx -y
+cd /var/www
+mkdir orchsky
+cd orchsky
+touch index.html
+echo "<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Hello, Nginx!</title>
+</head>
+<body>
+    <h1>Hello, Nginx!</h1>
+    <p>We have just configured our Nginx web server on Ubuntu Server!</p>
+</body>
+</html>" >> index.html
+service nginx start
